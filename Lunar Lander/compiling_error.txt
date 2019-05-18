@@ -1,0 +1,20 @@
+/home/end-user/Desktop/Lunar Lander/main.c: In function ‘main’:
+/home/end-user/Desktop/Lunar Lander/main.c:29:2: error: ‘navedin’ undeclared (first use in this function); did you mean ‘nave’?
+  navedin = vector_desde_matriz(nave_grande, nave_tam);
+  ^~~~~~~
+  nave
+/home/end-user/Desktop/Lunar Lander/main.c:29:2: note: each undeclared identifier is reported only once for each function it appears in
+/home/end-user/Desktop/Lunar Lander/main.c:59:14: warning: passing argument 1 of ‘rotar’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-array-qualifiers]
+        rotar(nave, nave_tam, NAVE_ROTACION_PASO);
+              ^~~~
+In file included from /home/end-user/Desktop/Lunar Lander/main.c:3:0:
+/home/end-user/Desktop/Lunar Lander/fisica_del_juego.h:18:6: note: expected ‘float (*)[2]’ but argument is of type ‘const float (*)[2]’
+ void rotar(float coordenadas[][2], int n, double rad);
+      ^~~~~
+/home/end-user/Desktop/Lunar Lander/main.c:63:13: warning: passing argument 1 of ‘rotar’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-array-qualifiers]
+       rotar(nave, nave_tam, NAVE_ROTACION_PASO);
+             ^~~~
+In file included from /home/end-user/Desktop/Lunar Lander/main.c:3:0:
+/home/end-user/Desktop/Lunar Lander/fisica_del_juego.h:18:6: note: expected ‘float (*)[2]’ but argument is of type ‘const float (*)[2]’
+ void rotar(float coordenadas[][2], int n, double rad);
+      ^~~~~
